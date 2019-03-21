@@ -1,0 +1,1 @@
+# smart-factory-pareto-reason-codes-bar-chart-panel
