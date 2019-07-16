@@ -9,7 +9,8 @@ System.register(['./data_processor', './utils'], function (_export, _context) {
     var categories = dp.getCategories(data);
     categories = dp.getCategoriesData(categories, data);
     categories = dp.sortMax(categories, 'value');
-    console.log(categories);
+    // console.log(categories);
+
 
     var categoriesValue = dp.filterItems(categories, 'value');
     var xAxisCateogriesLabel = dp.filterItems(categories, 'name');

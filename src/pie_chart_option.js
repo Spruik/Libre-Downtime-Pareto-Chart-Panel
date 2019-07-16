@@ -8,7 +8,7 @@ export function getOption (data, myChart) {
   let categories = dp.getCategories(data)
   categories = dp.getCategoriesData(categories, data)
   categories = dp.sortMax(categories, 'value')
-  console.log(categories);
+  // console.log(categories);
   
 
   const categoriesValue = dp.filterItems(categories, 'value')
