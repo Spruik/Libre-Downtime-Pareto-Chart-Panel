@@ -2,7 +2,7 @@ import moment from 'moment'
 import _ from 'lodash'
 import $ from 'jquery'
 import * as dp from './data_processor'
-import * as pie from './pie_chart_option'
+import * as pareto from './chart_option'
 import echarts from './libs/echarts.min'
 import { MetricsPanelCtrl } from 'app/plugins/sdk'
 
@@ -122,7 +122,7 @@ export class ChartCtrl extends MetricsPanelCtrl {
       if (!myChart || !data) {
         return
       }
-      const option = pie.getOption(data, myChart)
+      const option = pareto.getOption(data, myChart)
 
       myChart.off('click')
       myChart.setOption(option)
@@ -141,7 +141,7 @@ export class ChartCtrl extends MetricsPanelCtrl {
           option.toolbox.feature.myTool1.show = true
           const reasons = dp.getReasonsData(p.name, data)
 
-          if (!pie.checkIsDurationMode()) {
+          if (!pareto.checkIsDurationMode()) {
             // get reasons
             const sortedReasons = dp.sortMax(reasons, 'value')
             // get reason label
