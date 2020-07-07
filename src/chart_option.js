@@ -123,6 +123,9 @@ export function getOption (data, myChart) {
         data: xAxisCateogriesLabel,
         nameLocation: 'center',
         nameGap: 30,
+        axisLabel: {
+          interval: -1,
+        },
         axisPointer: {
           type: 'shadow'
         }
