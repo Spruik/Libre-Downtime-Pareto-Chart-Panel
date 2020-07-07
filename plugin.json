@@ -1,25 +1,34 @@
 {
+  "id": "libre-downtime-pareto-chart-panel",
+  "name": "Libre Panel for Pareto Analysis of Downtime Reason Codes",
   "type": "panel",
-  "name": "Pareto Analysis Reason Codes Pareto Chart",
-  "id": "smart-factory-pareto-reason-codes-bar-chart-panel",
-
   "info": {
+    "author": {
+      "name": "Spruik Technologies",
+      "email": "info@spruiktec.com",
+      "url": "https://spruiktec.com"
+    },
     "description": "Pareto Chart",
-    "keywords": ["table", "panel"],
+    "keywords": ["table", "panel", "libre"],
     "links": [
-      {"name": "Project site", "url": "https://github.com/Billiballa/grafana-table-panel"}
+      {"name": "Project site", "url": "https://github.com/Spruik/Libre-Downtime-Pareto-Chart-Panel"},
+      {"name": "Issues", "url": "https://github.com/Spruik/Libre-Downtime-Pareto-Chart-Panel/issues"}
     ],
+    "screenshots": [
+      {"name": "Panel Categories by Duration", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-duration.png" },
+      {"name": "Panel Categories by Frequency", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-frequency.png" },
+      {"name": "Panel Reason by Frequency", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-reasons.png" },
+      {"name": "Metrics", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-metrics.png" }
+    ],
+    "logos": {
+      "small": "img/icn-table-panel.svg",
+      "large": "img/icn-table-panel.svg"
+    },
     "version": "1.0.0",
-    "updated": "2017-06-23"
+    "updated": "2020-07-07"
   },
-  
-  "logos": {
-    "small": "img/icn-table-panel.svg",
-    "large": "img/icn-table-panel.svg"
-  },
-
   "dependencies": {
-    "grafanaVersion": "4.x.x",
+    "grafanaVersion": "6.x.x",
     "plugins": [ ]
   }
 }
