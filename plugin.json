@@ -3,11 +3,22 @@
   "name": "Libre Panel for Pareto Analysis of Downtime Reason Codes",
   "type": "panel",
   "info": {
+    "author": {
+      "name": "Spruik Technologies",
+      "email": "info@spruiktec.com",
+      "url": "https://spruiktec.com"
+    },
     "description": "Pareto Chart",
     "keywords": ["table", "panel", "libre"],
     "links": [
       {"name": "Project site", "url": "https://github.com/Spruik/Libre-Downtime-Pareto-Chart-Panel"},
       {"name": "Issues", "url": "https://github.com/Spruik/Libre-Downtime-Pareto-Chart-Panel/issues"}
+    ],
+    "screenshots": [
+      {"name": "Panel Categories by Duration", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-duration.png" },
+      {"name": "Panel Categories by Frequency", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-frequency.png" },
+      {"name": "Panel Reason by Frequency", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-reasons.png" },
+      {"name": "Metrics", "url": "public/plugins/libre-downtime-pareto-chart-panel/docs/libre-downtime-pareto-chart-panel-metrics.png" }
     ],
     "logos": {
       "small": "img/icn-table-panel.svg",
