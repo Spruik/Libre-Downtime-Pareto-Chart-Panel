@@ -1,15 +1,12 @@
 import * as dp from './data_processor'
-import * as utils from './utils'
 
 let isDurationMode = false
 
 export function getOption (data, myChart) {
-
   let categories = dp.getCategories(data)
   categories = dp.getCategoriesData(categories, data)
   categories = dp.sortMax(categories, 'value')
   // console.log(categories);
-  
 
   const categoriesValue = dp.filterItems(categories, 'value')
   const xAxisCateogriesLabel = dp.filterItems(categories, 'name')
@@ -17,17 +14,17 @@ export function getOption (data, myChart) {
   categoriesPercent = dp.accumulatePercentages(categoriesPercent)
 
   const leftYAxisMax = categories[0].total
-  
+
   let isDurationDataLoaded = false
 
-  //duration data
-  let leftYAxisMaxDuration = categories[0].durationTotal
+  // duration data
+  const leftYAxisMaxDuration = categories[0].durationTotal
   let categoriesSortedByDur
   let categoriesValueDur
   let xAxisCateogriesLabelDur
   let categoriesPercentDur
 
-  let option = {
+  const option = {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
@@ -52,13 +49,13 @@ export function getOption (data, myChart) {
             option.series[0].name = 'Categories'
             option.xAxis[0].name = ''
             if (!isDurationMode) {
-              //load frequency data
+              // load frequency data
               option.series[0].data = categoriesValue
               option.xAxis[0].data = xAxisCateogriesLabel
               option.series[1].data = categoriesPercent
-              option.yAxis[0].max = leftYAxisMax 
-            }else {
-              //load duration data
+              option.yAxis[0].max = leftYAxisMax
+            } else {
+              // load duration data
               option.series[0].data = categoriesValueDur
               option.xAxis[0].data = xAxisCateogriesLabelDur
               option.series[1].data = categoriesPercentDur
@@ -96,7 +93,7 @@ export function getOption (data, myChart) {
               option.yAxis[0].max = leftYAxisMaxDuration
 
               isDurationMode = true
-            }else {
+            } else {
               option.toolbox.feature.myTool2.title = 'duration'
               option.yAxis[0].name = 'Frequency (Times)'
 
@@ -104,22 +101,22 @@ export function getOption (data, myChart) {
               option.xAxis[0].data = xAxisCateogriesLabel
               option.series[1].data = categoriesPercent
               option.yAxis[0].max = leftYAxisMax
-  
+
               isDurationMode = false
             }
 
             myChart.setOption(option)
           }
         },
-        saveAsImage: { 
+        saveAsImage: {
           show: true,
           title: 'save as image'
         }
       },
-      right: 42,
+      right: 42
     },
     legend: {
-      data: ['Categories','Accumulation Curve']
+      data: ['Categories', 'Accumulation Curve']
     },
     xAxis: [
       {
@@ -154,7 +151,7 @@ export function getOption (data, myChart) {
         // interval: 10,
         axisLabel: {
           formatter: '{value} %'
-        },
+        }
         // splitLine: {
         //   show: false
         // }
@@ -182,6 +179,6 @@ export function getOption (data, myChart) {
   return option
 }
 
-export function checkIsDurationMode() {
+export function checkIsDurationMode () {
   return isDurationMode
 }
