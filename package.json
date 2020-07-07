@@ -1,14 +1,14 @@
 {
-  "name": "smart-factory-pareto-reason-codes-bar-chart-panel",
+  "name": "libre-downtime-pareto-chart-panel",
   "version": "1.0.0",
-  "description": "Pareto Analysis Reason Codes Pareto Chart",
+  "description": "Libre Panel for Pareto Analysis of Downtime Reason Codes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Spruik/smart-factory-pareto-reason-codes-bar-chart-panel"
+    "url": "https://github.com/Spruik/libre-downtime-pareto-chart-panel"
   },
   "author": "Spruik Technologies",
   "bugs": {
-    "url": "https://github.com/Spruik/smart-factory-pareto-reason-codes-bar-chart-panel/issues"
+    "url": "https://github.com/Spruik/libre-downtime-pareto-chart-panel/issues"
   },
   "main": "src/module.js",
   "scripts": {

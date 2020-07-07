@@ -1,23 +1,23 @@
 {
+  "id": "libre-downtime-pareto-chart-panel",
+  "name": "Libre Panel for Pareto Analysis of Downtime Reason Codes",
   "type": "panel",
-  "name": "Pareto Analysis Reason Codes Pareto Chart",
-  "id": "smart-factory-pareto-reason-codes-bar-chart-panel",
-
   "info": {
     "description": "Pareto Chart",
-    "keywords": ["table", "panel"],
+    "keywords": ["table", "panel", "libre"],
     "links": [
-      {"name": "Project site", "url": "https://github.com/Billiballa/grafana-table-panel"}
+      {"name": "Project site", "url": "https://github.com/Spruik/Libre-Downtime-Pareto-Chart-Panel"},
+      {"name": "Issues", "url": "https://github.com/Spruik/Libre-Downtime-Pareto-Chart-Panel/issues"}
     ],
     "logos": {
       "small": "img/icn-table-panel.svg",
       "large": "img/icn-table-panel.svg"
     },
     "version": "1.0.0",
-    "updated": "2017-06-23"
+    "updated": "2020-07-07"
   },
   "dependencies": {
-    "grafanaVersion": "4.x.x",
+    "grafanaVersion": "6.x.x",
     "plugins": [ ]
   }
 }

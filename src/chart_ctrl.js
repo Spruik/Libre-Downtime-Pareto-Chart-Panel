@@ -198,4 +198,4 @@ export class ChartCtrl extends MetricsPanelCtrl {
 	}
 }
 
-ChartCtrl.templateUrl = 'partials/module.html';
+ChartCtrl.templateUrl = 'public/plugins/libre-downtime-pareto-chart-panel/partials/module.html';

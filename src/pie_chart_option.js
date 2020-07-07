@@ -45,7 +45,7 @@ export function getOption (data, myChart) {
         myTool1: {
           show: false,
           title: 'back',
-          icon: 'image://public/plugins/smart-factory-pareto-reason-codes-bar-chart-panel/img/back.png',
+          icon: 'image://public/plugins/libre-downtime-pareto-chart-panel/img/back.png',
           onclick: () => {
             option.toolbox.feature.myTool1.show = false
             option.legend.data[0] = 'Categories'
@@ -70,7 +70,7 @@ export function getOption (data, myChart) {
         },
         myTool2: {
           title: 'duration',
-          icon: 'image://public/plugins/smart-factory-pareto-reason-codes-bar-chart-panel/img/switch.png',
+          icon: 'image://public/plugins/libre-downtime-pareto-chart-panel/img/switch.png',
           onclick: () => {
             option.legend.data[0] = 'Categories'
             option.series[0].name = 'Categories'
