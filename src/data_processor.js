@@ -1,4 +1,3 @@
-import * as utils from './utils'
 import moment from 'moment'
 
 /**
@@ -192,45 +191,6 @@ export function getReasonsData (category, data) {
   }
 
   return reasonsData
-}
-
-export function toDuration (data) {
-  const d = utils.copyObject(data)
-  for (let i = 0; i < d.length; i++) {
-    d[i].value = d[i].duration / 1000000
-    d[i].isDurationMode = true
-  }
-  return d
-}
-
-/**
- * Expecting a duration int value, return (string) hours and mins like 2:35 meaning 2 hours and 35 mins
- * if val is under 1 hour,  return (string) mins like 55-mins
- * @param {*} val
- */
-export function toHrsAndMins (difference) {
-  const daysDiff = Math.floor(difference / 1000 / 60 / 60 / 24)
-  difference -= daysDiff * 1000 * 60 * 60 * 24
-
-  let hrsDiff = Math.floor(difference / 1000 / 60 / 60)
-  difference -= hrsDiff * 1000 * 60 * 60
-
-  const minsDiff = Math.floor(difference / 1000 / 60)
-  difference -= minsDiff * 1000 * 60
-
-  const secsDiff = Math.floor(difference / 1000)
-  difference -= minsDiff * 1000
-
-  const timeToAdd = daysDiff * 24
-  hrsDiff = hrsDiff + timeToAdd
-
-  if (hrsDiff === 0 && minsDiff === 0) {
-    return secsDiff + ' Seconds'
-  } else if (hrsDiff === 0 && minsDiff !== 0) {
-    return minsDiff + ' Minutes'
-  }
-
-  return hrsDiff + ' Hrs & ' + minsDiff + ' Mins'
 }
 
 // look for the distinct items that this category has

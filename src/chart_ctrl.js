@@ -5,8 +5,6 @@ import * as dp from './data_processor'
 import * as pie from './pie_chart_option'
 import echarts from './libs/echarts.min'
 import { MetricsPanelCtrl } from 'app/plugins/sdk'
-import './css/style.css!'
-import './css/bootstrap-slider.css!'
 
 const panelDefaults = {
   targets: [{}],
@@ -65,7 +63,6 @@ export class ChartCtrl extends MetricsPanelCtrl {
 
   onDataReceived (dataList) {
     if (dataList.length === 0 || dataList === null || dataList === undefined) {
-      // console.log('No data reveived')
       this.hasData = false
       return
     } else {

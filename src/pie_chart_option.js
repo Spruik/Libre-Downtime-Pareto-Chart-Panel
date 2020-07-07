@@ -6,7 +6,6 @@ export function getOption (data, myChart) {
   let categories = dp.getCategories(data)
   categories = dp.getCategoriesData(categories, data)
   categories = dp.sortMax(categories, 'value')
-  // console.log(categories);
 
   const categoriesValue = dp.filterItems(categories, 'value')
   const xAxisCateogriesLabel = dp.filterItems(categories, 'name')
@@ -148,13 +147,9 @@ export function getOption (data, myChart) {
         name: 'Percent',
         min: 0,
         max: 100,
-        // interval: 10,
         axisLabel: {
           formatter: '{value} %'
         }
-        // splitLine: {
-        //   show: false
-        // }
       }
     ],
     series: [
