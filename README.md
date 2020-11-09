@@ -198,6 +198,10 @@ For any issue, there are fundamentally three ways an individual can contribute:
 
 ## Change log
 
+- 1.0.2 Security Update
+  - Update bl library >=1.2.3
+  - Bump Revision
+
 - 1.0.1 Add tar build output
   - Remove unused libraries
   - Fix npm audit
