@@ -1,6 +1,6 @@
 {
   "name": "libre-downtime-pareto-chart-panel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Libre Panel for Pareto Analysis of Downtime Reason Codes",
   "repository": {
     "type": "git",
